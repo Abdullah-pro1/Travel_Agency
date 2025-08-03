@@ -386,3 +386,37 @@ blockquote {
   text-decoration: none;
   font-weight: bold;
 }
+
+.testimonials {
+  padding: 40px;
+  text-align: center;
+  background-color: #f0f2f5;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+.home-background {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  /* Or use an image: */
+  /* background: url('/public/images/travel-bg.jpg') center/cover no-repeat; */
+  padding-top: 60px; /* adjust for navbar */
+}

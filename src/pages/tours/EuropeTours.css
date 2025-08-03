@@ -1,0 +1,111 @@
+.tours-section {
+  padding: 40px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.tour-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.book-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #0056b3;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal input,
+.modal select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal button[type="submit"] {
+  background: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.modal button[type="submit"]:hover {
+  background: darkgreen;
+}
+
+.close-btn {
+  margin-top: 10px;
+  background: #ccc;
+  color: black;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.close-btn:hover {
+  background: #999;
+}
